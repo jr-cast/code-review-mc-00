@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img id="hamburguer" width="40px"
+                src="https://w7.pngwing.com/pngs/626/110/png-transparent-black-logo-computer-icons-hamburger-button-menu-new-menu-angle-text-rectangle.png"
+                alt="hamburguer icon">
+            <a id="logo" href="www.youtube.com"><img width="100px"
+                    src=data:image/png;base64,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
+                    alt=""></a>
+        </div>
+        <div class="search">
+            <input type="text">
+            <button id="searchButton"><img width="15px"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX///8rAAAAAAApAAAmAAAnAAAbAAAkAAAhAAAdAAAQAAAZAAAWAAANAAAgAAATAAD29PTl4uLX09Pv7OzJw8OwqKiZjo5wYGBlVFR2Z2fOycm/uLiLf39bSEhTPj76+fmon59+cHDh3d1KMzM4GRk9ISE1ExOflZVIMDBzZGS6s7OFeHiSh4dPOjprWVlDKSkzDAxBj7VyAAAJvklEQVR4nO2dZ3fzKgyAX+PEG+/s5awmzWjy/3/dTZcBG7tJY4FvD8/HntRCNkhCgPj3T6FQKBQKhUKhUCgUCoVCoVAoFGIIk2gV31hFyUJ2WxomSrPj7Go4COEPEA6sy2DaG4eyW9YAYXqauchxfVPXaPSuZXsYvQyyWHYTnyHerZFjmFo1uuVi562XyG7pr4inV2R0arTLsTw0z/5vSobZBtn6z8p9Y7pomMpu9AOsRtjt3q/el5JY2/1PLM94hvxH1ftAd9H0f9BZ4zmqMy0/YKNjy79jNHxGv08d+7KVqGExfVa/d1xzIluRKiamUd92vdsxb3T0eiuro1krh2P4hiob3vFdB2P/5XKeDWez9VZzb4GbYVX+3kSZbHXKpHaFATVdjNbLLF3RJmSRxJPdQEOOXRET4FnbLM6R+wF1H7vDmsjzFrXukccdu1bQqgggXHu8RmL7OP7xf5PDkKukjk4CWn4nsVtuoe7i0c/qfbLonXlBgjMDbfUDHMo9tONo2UMDabVEZUNsb9thU3eo2LIuvjzu0sJTUNLRNFYADX6UaVFBPdj8zmUvTqW+2sXyJ8hLXOxaXvbrhyUjVPAeOrp3MEOxdIotWj6VZYovQbtUPBa+oKE93Z5d4TPqSGZH7RcURMsGHrraugUV5ZmbHmtkOqihScGSfW7XkuU0xmxD7G3U1JMLHtbcNPXgx0gw0wyvyQikECXZbw0++362TCPwsdGHJxuLebqMif+IiUAazz0s1jbzfPE+48AMQrRrXsKcVlG3RM8XE8ZPwEzJz3QM5w8hRNQwpwch1Ci50GMR92CEVNCjP2HQrJEhhBod3jgivWJIR6M23EQ1oh2SL9JlDKgR0oF0x0xQgcRlbmJGbmORDI8d1Vu6L5CSGC7U8EAHWFkzytoEGaysnANlZuwRsLDQIENRNwTtcHihZOrg0lJqSLhigrcDNTREDH7arGEhH/FKPqE/ECAv9IhAFyA6LDGhRqEjJFjskdSN7guQR8Vrnog3emNLNgUE8LHbigx83QSX9gllbLpbcGlHX+T7/OJM+g185o2MQl2DlpUzJlL9JtJ5dRzIqH8it/0wVBTlAYsakv6CgUXRUD7Ygd3HEJIxb09BJRUgWxstWB9MdVLYOUWRE8l7wfad1zzSN8+ggopEpPM4oJEiWa73xKZN/u1zWwM6PGJitZHg7F6WL9eAOn0ixpwDiuFBdVMEmJIivsLN4KTwIcFpAOgvyD4t8Wt60zwFbsNttCE9RVjQTUhzpw84Qia5NzTFL3dRwYYLJmSXu10hc+0CWzJEwIKNUe7vHQkbJCjpYD7/kpszSINdxS53VXCGnEx+4UZCNcTUgBnTMI9oOmKD0k9I/sSCsnPEWQDPYPiE8O6C5BIAfW4NuaXRoZZoyECQ4Szo1QQoM0Cmv6KnTp+c8wkUApLQy2eHkLFvNSTuR0DLF2TuBDvNroK4fCh3rDSERmn4PJSlkaIhvKU55BrK8RZkXQ/KW8j2+Jvc40OtXciO2vLMvn4FkkBF3q9AIuoQEHmT2ZPwbOk75AXDZYnIllYbSkQN1AwYLK+/lZrFyARkMV6lZqKWeRIFLuDoG/BvsRoqDwaWTSQZYQlpDCojDLeUT2X1u2BCqiCGBjIPRpaaxa/MkHVuyCVSmatrFyGrayTtbIo+Z52IWSGVuMpNpm5gucQPyMYd0RMoMnXyoY53fPBGdpuI7aaJqN0mZBIseMdQnzLjoDuhqVdpCJ0javns1wQ+4jUjO/cCWEkM1NbrAPiABzFpAjfQMltoHeDt+gtqE7S4QzrUMSQL+ggLNYfRHOD+QqDGBgaft1GvU9g26LHYjrMmG5JFnbTaU3ugBQx+akOy7go5pEOfJBMikaq2ZkNvnH9n4ROBYpwwdUhHwOmHm22jTq0LivdJfCHiWCd9UFZUHNWjjue5oIH+O9T7FHSS7MaGKr8KfQJxQPVRUSfJ2GOdugeaHKYP/gs4sJozpI4fm3tAQeypcYE7QBJasAGXO03oasuW0Dn3jq7IhcEs3IauviF4rWTPyM5ghMzp4iYYSEgVEVueBiRaHNI1fizhS5Y9DK3ikC5qBmyy+Q1gqxxlTT9/xlRtE2lHc65M2fWGC0WFe+YFBkIPO37DDkUNN5leiK5MqS9fUq3WlFXRXTcWNaZs7cSOJutOk0JtVtNuKIdyYp+rB0KTzwxHtrZnM8WNk3Oh7LLU4pejQrVR7/L0ymkPF8ouY7llr98K77vz5GeM5qWatrJvEhgUvqLmar93XdyrB2TsbGEYFV+6js+/bFNm8K4ekFmh9ZNSMWjNRPPHdVxkvse/SkBehdZvsnLFchPtH0v5Jye3Qr/3p8GXbPmB1CnfcNAJnOndvWsyREbdnReAZf3uJHrhDSAbbft3KJkuDeenq008Eannel5Lg/GdroHM5aE6IlnE2RA5/h0XQ2Ep+64ZDkVH/YXue8gc9g9xwVpE495x7WHOrQp8pEyfWJKSryZamoaHEb7OZ2+vo9FgONubCDmeX3lnWafoZDXJsdsXvaD+Jiu9Y5rWDdPs1vdLZz12S3/UXdk+40b42sRtSLaTFZJ5n5ibNtwLGa/xwxeusVhft3Zdyu/Kl7F/vsxkg++6ErBKv8GX5Y04xtkF36VwH5P9b/uqjV6JZzlwVITLPT/IeFYfonDpeJi9OW/qlH8EXQ/2fqJTBz9yRaBuoHMp5frGCZSkX1lCkY48fN81lqaLXvq8wGdtlX6rY3k5Gw7pdIM8v9a4moaD5ruK6HWhcSJ6rWXXlUWH5RZjzzaLeuqmZQTInffTGi8XBeVOYK3Ftf5ewvhwetu77/cdO04QOBgjhLTZaDf5scfFHINqyLns4g4W0Soep5M0HceruwMwns9wpKT4wThx4nmYxTxpjMpBuMj68yKYlx2rjmWn3xpl8VIOArvCrywBJeFk4cyL7FY1Cs9n2KJvZYFlwlER7GYUOex4PiOT3apGWXKucm1B+q1JZjZHxT/lMwqXoH26RaMF6bfmSDhpA/lLNo2y4hhUWdtQgEg5KrZgyaZJMl76TfYyf7MceesZrUm/NcKQl35rwZJNg3CS/X/MZ4R6OXUHupdePFF5W4QWtCXZ3wxjjkH9Y+Fbr6yilLpVgJzKSzZtWs5ogkEp/Sa8EAk059KSzR8bif8W1+KSjdgKDwKIiuk3XdLl5HCU0m8yKsjBUlyykVM0FpQ+m36TU1IVliOjoowaeeAsaRW9vzVN/KJPReF/bJb4Tep9Z1G7UGVpZRMu0ceOlu4fWzOliY4mwuj6dxV8J4pbtYtIoVAoFAqFQqFQKBQKhUKhUChaz38zYIB15fkSFgAAAABJRU5ErkJggg=="
+                    alt=""></button>
+            <button><img width="15px"
+                    src="data:image/png;base64,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"
+                    alt=""></button>
+        </div>
+        <div class="right">
+
+            <a href="#create"><img width="30px"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAADIyMiFhYU/Pz/09PTv7+/f39/s7Ox7e3uUlJT6+vr29vZiYmLu7u4wMDA7OzvBwcFnZ2ednZ1LS0uoqKhycnLOzs7b29tSUlKvr6+8vLwjIyPU1NRERETl5eVZWVkbGxuPj48zMzOCgoIqKioMDAwUFBS1tbUeHh6DpEjoAAAE9klEQVR4nO2daVviMBRGU5RVXADZRCyLCvP//+DIImS5uU0Q2qR9z6fB0D45DZOt7b1CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpNsze4K4rBbNy4jkVrO9hSp6oPF0nRfLVrf/ZLDxoD/e/jx4LlTnSe/iTY+T2PqphOi3TSubvcb/J8Pk1KeYdC70LBO/kk5wvVWBclYueiZhwvlXOsf//eLMYhg6m338NIP0fQgkny4inYM09xKEjzr7sjHz5+dWooODTtMu+Ku9N2F3wjT7Av6udcay9mjn6tV/r4Xdks3yr70nUSHNgO3xV+63+cDme1gph1jKYYOfilL9YLJMyRfvDg+Lu4EY1PrULNzENWzE/gp1hrv/rtHbJofnk14vydEUz0HugzF4VM1J8qf9HbnN/O8EP+6NE33xalFYfMF2tGL6IbNuRPa+ZU+dKSq2WfvHXJgW4k9zvqPGeeo0MGSv9n6/u2ZKv1xL1sKHdDr7k6ZCDXeUx+o0FuR4x+LodiKE/ltjlLsMiLhDfqC0PKb7m/GIqh3NNeaQ/oOsi/QGKhmCo95C/HoUAxlP69yVchA3lBZ3bx5IbE8+RYajP0XYzdFrmTX2hl8kbMmc6p3GZ4n6dAJnV7zfRp3Z4Pac8pckNtI+aIMiuI2tDciNkxVbdXYzak17L6MBevIbkRk/SNNXK0huRGzDdxkyNSQ3ojpk3NWeM0JDdi3um1QnyGH6JJ3nRYWY6N0JCcpL1YN3DiMyQx7n6eKYXhtMUcWwZDfikbv+FjxpZn9IaZDzJEbkiO8SpRG1rGeJWYDW1jvEq8hvYxXiVaQ2aMV4nU8JUb41XiNPTZro7RMGuMV4nQ0PMBsPgMvZ6qETEa+tYMhmEAQw4YhgEMOWAYBjDkgGEYwJADhmEAQw4YhgEMOWAYBjDkgGEYwJADhmEAQw4YhgEMOWAYBjDkgGEYwJADhmEAQw4YhgEMOWAYBtUyLP+zieV/vrQCzwgn5X/OO6nAs/pJ+d+3SCrwzkxS/veekgq8u5aU//3DHWV/hzSpwHvASfnf5U4q8D5+UrKYCnRcjPvUdmyEhpbYJh3LsfEZ7mpGNuPXhDw2TkPRIuMIkhFXIzW0xInalCdOlLDF8+wb07h4Dcsfr03YYu4t1MCkURsKUdtQjuWJm7iDjG/tEvsynEjQO2RDPcDxRA1pfsQSv3QpfwgJOefGwiglx/81GYNW/vC3DERXRg7DTQzrqVzxE5+HQsVQ7pqCigUt/2cjlxGusaDl5va9AXJT5HrT2xZPZH4qI553TS4NKCa7EgjStmnhFJO9K5c95yrBocTVtw9jLnH1hdLUweRGUMJZc7v5RP4jFb2l3faUb44ajJXt4x8y81toOUrMiXr+aDlKHjO+npWjxAjuyuXLyIMnPSA5vY6XycgzI4yZbH9YVKqg2qxjrOT7DlelyeYKyv7PWixu97fZfE9h5+wic1sQcDm7hPiXb6V9cMlndYTJuxZw7jyvjBT23Hk/C67cq+6G76Lcmv8w1BSP/ql9rDkshWiQaT+K5aI5pJb+Qr5I3LBZCJfmPVZyySpdcTOofMAOt+ttSGlo3rWieTA5nVfuD0BRnNb15g24xqD4htz0XTNz2kn3bWXm9jgw6Q07BaVWX3WGtSvl1erO5275PQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAl4j+9lEu4v3MHUQAAAABJRU5ErkJggg=="
+                    alt=""></a>
+            <a href="#youTubeApps"><img width="30px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJcit0diE1m3pBsEJ33s6IicNcK7EwKwrsQ&usqp=CAU"
+                    alt=""></a>
+            <a href="#notifications"><img width="25px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxDfqZv1bwKszpbvEqhUMMkaACUOxes30QIw&usqp=CAU"
+                    alt=""></a>
+            <a href="#profile"><img width="25px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeINj90WuBkiywkv4Z4gDCIDgBBzCp2jZEcw&usqp=CAU"
+                    alt=""></a>
+        </div>
+    </nav>
+    <section>
+        <div id="vidContainer">
+            <iframe id="mainVideo" width="1043" height="572" src="https://www.youtube.com/embed/eiwm5TMHIy8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div id="titleDescription">
+                <div id="title">
+                    <h3>10 years of Raspberry Pi</h3>
+                    <img src="./static/likes.png" alt="">
+                </div>
+                <div id="headDescription">
+                    <div id="mainDes">
+                        <div>
+                            <img id="piAccount"
+                                src="https://icon-library.com/images/raspberry-pi-icon-png/raspberry-pi-icon-png-15.jpg"
+                                alt="">
+                        </div>
+                        <div id="description">
+                            <h3>Raspberry Pi</h3>
+                            <p>Almost exactly ten years ago today, thousands of you set your alarms, and woke on
+                                leap-day
+                                morning to discover that we’d started selling Raspberry Pi computers. By the time our
+                                all-volunteer team gathered in the pub that evening for celebratory drinks, our
+                                licensees
+                                Farnell and RS </p>
+                        </div>
+                    </div>
+                    <div id="button">
+                        <button id="subscribe">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div id="commentCount">
+                <p> <b>2,117 Comments</b> </p>
+                <p> <b>SORT BY</b> </p>
+
+            </div>
+            <div id="mainBox">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeINj90WuBkiywkv4Z4gDCIDgBBzCp2jZEcw&usqp=CAU"
+                    alt="">
+                <div id="mainCommentHead">
+                    <div id="commentHead">
+                        <input type="text" placeholder="Add Comment">
+                    </div>
+                    <div id="commentButtons">
+                        <button id="cancel">CANCEL</button>
+                        <button id="comment">COMMENT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <img id="profileComment"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeINj90WuBkiywkv4Z4gDCIDgBBzCp2jZEcw&usqp=CAU"
+                    alt="">
+                <div class="commentComment">
+                    <p><b>John Doe_0117</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur id dolor debitis
+                        consequatur unde molestiae aspernatur numquam quo inventore repellendus, nobis deserunt
+                        voluptatibus
+                        minus quidem temporibus et recusandae iste.</p>
+                    <img src="./static/likesReply.png" alt="">
+                </div>
+            </div>
+            <div class="comments">
+                <img id="profileComment"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeINj90WuBkiywkv4Z4gDCIDgBBzCp2jZEcw&usqp=CAU"
+                    alt="">
+                <div class="commentComment">
+                    <p><b>John Doe_0117</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur id dolor debitis
+                        consequatur unde molestiae aspernatur numquam quo inventore repellendus, nobis deserunt
+                        voluptatibus
+                        minus quidem temporibus et recusandae iste.</p>
+                    <img src="./static/likesReply.png" alt="">
+                </div>
+            </div>
+            <div class="comments">
+                <img id="profileComment"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeINj90WuBkiywkv4Z4gDCIDgBBzCp2jZEcw&usqp=CAU"
+                    alt="">
+                <div class="commentComment">
+                    <p><b>John Doe_0117</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur id dolor debitis
+                        consequatur unde molestiae aspernatur numquam quo inventore repellendus, nobis deserunt
+                        voluptatibus
+                        minus quidem temporibus et recusandae iste.</p>
+                    <img src="./static/likesReply.png" alt="">
+                </div>
+            </div>
+            <div class="comments">
+                <img id="profileComment"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeINj90WuBkiywkv4Z4gDCIDgBBzCp2jZEcw&usqp=CAU"
+                    alt="">
+                <div class="commentComment">
+                    <p><b>John Doe_0117</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur id dolor debitis
+                        consequatur unde molestiae aspernatur numquam quo inventore repellendus, nobis deserunt
+                        voluptatibus
+                        minus quidem temporibus et recusandae iste.</p>
+                    <img src="./static/likesReply.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="width: 402px" id="suggestions">
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+            <div class="suggest">
+                <div class="thumb">
+                    <a href="#"><img src="./static/thumbNail.png" alt=""></a>
+                </div>
+                <div class="thumbText">
+                    <a href="#">
+                        <p><b>Scott Orr - Oh Man (Full Album)</b></p>
+                        <p>Nice Guys</p>
+                        <p>28k - 5 months ago</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
