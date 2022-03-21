@@ -1,0 +1,235 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.left a {
+    padding-left: 25px;
+}
+
+.right {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+input {
+    padding: 10px;
+    height: 15px;
+    width: 550px;
+}
+
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#suggestions {
+    margin-top: 24px;
+    width: 400px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#videoTitle {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    width: 1100px;
+    height: 81px;
+}
+
+button {
+    padding: 8px 15px;
+}
+
+#vidContainer {
+    margin-top: 24px;
+    padding-right: 24px;
+}
+
+#title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+#title h3 {
+    padding-bottom: 15px;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+}
+#description h3 {
+    margin: 0%;
+    padding-top: 15px;
+}
+
+#subscribe {
+    margin-top: 15px;
+    color: white;
+    background-color: red;
+    border-radius: .15em;
+    border: 0ch;
+    font-size: medium;
+}
+
+#description p {
+    width: 750px;
+}
+
+#headDescription {
+    display: flex;
+    width: 1041px;
+    justify-content: space-between;
+}
+
+#piAccount {
+    width: 55px;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#mainDes {
+    display: flex;
+}
+
+#titleDescription {
+    border-bottom: 1px solid lightgray;
+}
+
+.thumb {
+    width: 169px;
+    height: 94px;
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.thumbText {
+    width: 226px;
+    height: 94px;
+}
+
+.thumbText p {
+    font-size: smaller;
+    margin: 0%;
+    padding-left: 15px;
+    text-decoration: none;
+}
+.suggest {
+    display: flex;
+}
+
+#commentHead {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+#commentHead img {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+#commentHead input {
+    width: 965px;
+    height: 20px;
+    padding: 0%;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    outline: none;
+}
+
+#commentButtons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#commentButtons button {
+    border: 0;
+    border-radius: .15rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 25px;
+}
+
+#commentCount {
+    display: flex;
+    padding-bottom: 0%;
+}
+
+#commentCount p {
+    padding-left: 25px;
+}
+
+#mainCommentHead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#mainBox {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#mainBox img {
+    width: 40px;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.comments {
+    display: flex;
+}
+
+#profileComment {
+    width: 40px;
+    height: 40px;
+}
+
+.commentComment {
+    padding-left: 20px;
+}
+
+.commentComment p {
+    font-size: medium;
+}
+
+
+.comments img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
